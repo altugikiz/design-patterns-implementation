@@ -1,21 +1,21 @@
 public class NameRepository implements Container {
-    
-    // Veriler burada saklanıyor (Veritabanı veya Liste olabilir)
-    public String[] names = {"Altug", "Ayse", "Mehmet", "Fatma"};
+
+    // Data is stored here (Could be a Database or List)
+    public String[] names = { "Altug", "Daryl", "Negan", "Rick" };
 
     @Override
     public Iterator getIterator() {
         return new NameIterator();
     }
 
-    // INNER CLASS (Dahili Sınıf)
-    // Bu sınıf sadece NameRepository'ye hizmet eder.
+    // INNER CLASS
+    // This class only serves NameRepository.
     private class NameIterator implements Iterator {
         int index;
 
         @Override
         public boolean hasNext() {
-            // Dizi sınırını aştık mı kontrol et
+            // Check if we exceeded the array bounds
             if (index < names.length) {
                 return true;
             }
@@ -24,7 +24,7 @@ public class NameRepository implements Container {
 
         @Override
         public Object next() {
-            // Varsa veriyi dön ve indeksi bir artır
+            // If exists, return the data and increment the index
             if (this.hasNext()) {
                 return names[index++];
             }
