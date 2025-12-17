@@ -13,7 +13,6 @@ Nesnelerin **nasıl oluşturulacağı** ile ilgilenir.
 |---------|----------|--------|
 | **Singleton** | Bir sınıftan sadece tek bir nesne oluşturulmasını garanti eder | [📁 Singleton](01-Creational/Singleton) |
 | **Factory Method** | Nesne oluşturmayı alt sınıflara bırakır | [📁 Factory Method](01-Creational/FactoryMethod) |
-| **Builder** | Karmaşık nesneleri adım adım inşa eder | [📁 Builder](01-Creational/Builder) |
 
 ---
 
@@ -72,7 +71,6 @@ Her pattern klasöründe `docs*.md` dosyası bulunur. Bu dosyalar:
 ```
 design-patterns-implementation/
 ├── 01-Creational/
-│   ├── Builder/
 │   ├── FactoryMethod/
 │   └── Singleton/
 ├── 02-Structural/
